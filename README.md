@@ -7,10 +7,15 @@ Template I use to jumpstart python projects
 - pre-commit configuration file for black and ruff
 - .gitignore for python 
 
+## Dependencies:
+- Poetry
+- Github Client
+
 ## Usage
 ```
 gh repo create <repo name> --public --template=https://github.com/jstet/poetry_template
 git clone git@github.com:<repo name>.git 
 cd <repo name>
 poetry install --all-extras
+poetry run pre-commit install
 ```
